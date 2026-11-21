@@ -7,7 +7,7 @@
     "url": "https://seatwifi.com"
   },
   "homepage": "https://seatwifi.com/for-developers",
-  "repository": "https://github.com/jackculpan/seatwifi-plugins",
+  "repository": "https://github.com/SeatWifi/MCP",
   "license": "MIT",
   "keywords": [
     "wifi",

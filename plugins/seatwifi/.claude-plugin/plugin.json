@@ -8,7 +8,7 @@
     "url": "https://seatwifi.com"
   },
   "homepage": "https://seatwifi.com/for-developers",
-  "repository": "https://github.com/jackculpan/seatwifi-plugins",
+  "repository": "https://github.com/SeatWifi/MCP",
   "license": "MIT",
   "keywords": [
     "wifi",
@@ -23,6 +23,7 @@
   "documentationUrl": "https://seatwifi.com/for-developers",
   "supportUrl": "https://seatwifi.com/contact",
   "privacyPolicyUrl": "https://seatwifi.com/privacy",
+  "termsOfServiceUrl": "https://seatwifi.com/terms",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }

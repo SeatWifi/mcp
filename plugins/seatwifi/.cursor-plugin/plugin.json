@@ -8,7 +8,7 @@
   },
   "publisher": "SeatWiFi",
   "homepage": "https://seatwifi.com/for-developers",
-  "repository": "https://github.com/jackculpan/seatwifi-plugins",
+  "repository": "https://github.com/SeatWifi/MCP",
   "license": "MIT",
   "logo": "assets/logo.png",
   "category": "integrations",
