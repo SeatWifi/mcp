@@ -1,0 +1,16 @@
+{
+  "name": "seatwifi",
+  "owner": {
+    "name": "SeatWiFi"
+  },
+  "metadata": {
+    "description": "SeatWiFi in-flight WiFi data for AI agents"
+  },
+  "plugins": [
+    {
+      "name": "seatwifi",
+      "source": "plugins/seatwifi",
+      "description": "In-flight WiFi by flight, airline or tail number, measured speeds, Starlink rollout."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "seatwifi",
+  "displayName": "SeatWiFi",
+  "version": "1.2.2",
+  "description": "In-flight WiFi data: provider by flight, airline or tail number, measured speeds, and Starlink rollout status. Read-only, no account needed.",
+  "author": {
+    "name": "SeatWiFi"
+  },
+  "publisher": "SeatWiFi",
+  "homepage": "https://seatwifi.com/for-developers",
+  "repository": "https://github.com/jackculpan/seatwifi-plugins",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "category": "integrations",
+  "keywords": [
+    "wifi",
+    "in-flight wifi",
+    "starlink",
+    "airline",
+    "flight",
+    "travel",
+    "aviation",
+    "mcp"
+  ],
+  "tags": [
+    "travel",
+    "aviation",
+    "wifi",
+    "starlink",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}

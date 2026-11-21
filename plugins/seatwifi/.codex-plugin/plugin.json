@@ -1,0 +1,49 @@
+{
+  "name": "seatwifi",
+  "version": "1.2.2",
+  "description": "In-flight WiFi data: provider by flight, airline or tail number, measured speeds, and Starlink rollout status. Read-only, no account needed.",
+  "author": {
+    "name": "SeatWiFi",
+    "url": "https://seatwifi.com"
+  },
+  "homepage": "https://seatwifi.com/for-developers",
+  "repository": "https://github.com/jackculpan/seatwifi-plugins",
+  "license": "MIT",
+  "keywords": [
+    "wifi",
+    "in-flight wifi",
+    "starlink",
+    "airline",
+    "flight",
+    "travel",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "SeatWiFi",
+    "shortDescription": "In-flight WiFi by flight",
+    "longDescription": "Check the WiFi on a flight before you fly. SeatWiFi tells you which provider (Starlink, Viasat, Gogo, Panasonic, Amazon Leo) is fitted to the aircraft on a flight, an airline or a tail number, whether the WiFi is free, how fast it is from measured speed tests, and how far each airline's Starlink rollout has progressed. Answers are predictions from fleet and ADS-B data, and each answer gives its confidence. Read-only. No account needed.",
+    "developerName": "SeatWiFi",
+    "category": "Travel",
+    "capabilities": [
+      "Predict the WiFi provider on a flight number and date",
+      "Show WiFi provider, price and speed for an airline",
+      "Show Starlink rollout status by airline",
+      "Show the WiFi history of an aircraft tail number",
+      "Show measured WiFi speeds"
+    ],
+    "websiteURL": "https://seatwifi.com",
+    "supportURL": "https://seatwifi.com/contact",
+    "privacyPolicyURL": "https://seatwifi.com/privacy",
+    "termsOfServiceURL": "https://seatwifi.com/terms",
+    "defaultPrompt": [
+      "Will UA1234 have Starlink WiFi tomorrow?",
+      "Which airlines have free Starlink WiFi?",
+      "Is the WiFi on Qatar Airways fast enough for video calls?"
+    ],
+    "brandColor": "#008f73",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png"
+  }
+}
