@@ -15,7 +15,7 @@ The server is read-only and needs no account. A paid SeatWiFi API key is optiona
 | `.claude-plugin/plugin.json`, `.mcp.json` | Claude Code and the Claude plugin directory |
 | `.codex-plugin/plugin.json`, `.mcp.json` | OpenAI Codex and the ChatGPT plugin directory |
 | `skills/seatwifi-lookup/SKILL.md` | All three |
-| `assets/logo.png` | All three (512 x 512 PNG, a copy of `public/favicon-512x512.png`) |
+| The logo image (512 x 512 PNG) | All three |
 
 The marketplace files at the repository root (`.cursor-plugin/marketplace.json` and
 `.claude-plugin/marketplace.json`) point here. Keep `version` the same in all three manifests and in
@@ -65,7 +65,7 @@ Each directory reviews by hand. Nothing here is submitted automatically.
 1. In the OpenAI platform organization, complete individual or business verification. You need the
    Apps Management Write permission.
 2. Make the ZIP from this folder:
-   `cd plugins/seatwifi && zip -r ../seatwifi-openai.zip .codex-plugin .mcp.json skills assets LICENSE`
+   put the `.codex-plugin`, `.mcp.json`, `skills`, logo folder and `LICENSE` from this folder in one ZIP file.
 3. <https://platform.openai.com/plugins> → Upload new or existing plugin → upload the ZIP.
 4. MCPs → Connect. The portal gives a domain verification token. Set it on the MCP worker, deploy,
    then let the portal check it:
