@@ -45,5 +45,59 @@
     "brandColor": "#008f73",
     "composerIcon": "./assets/logo.png",
     "logo": "./assets/logo.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Starlink odds for a flight number",
+              "prompt": "Will UA1234 have Starlink WiFi on its next flight?",
+              "tools_triggered": "get_wifi_facts",
+              "expected_behavior": "Gives the Starlink odds, the confidence level and a link to the SeatWiFi flight page"
+            },
+            {
+              "description": "WiFi provider and price for an airline",
+              "prompt": "What WiFi does Qatar Airways have, and is it free?",
+              "tools_triggered": "get_airline_wifi",
+              "expected_behavior": "Names the providers, the free conditions and the cabins"
+            },
+            {
+              "description": "Starlink rollout progress",
+              "prompt": "Which airlines are installing Starlink right now?",
+              "tools_triggered": "get_rollouts",
+              "expected_behavior": "Lists airlines with an in-progress rollout and their progress"
+            },
+            {
+              "description": "Measured WiFi speeds for an airline",
+              "prompt": "Is the WiFi on Delta fast enough for a video call?",
+              "tools_triggered": "get_speed_stats",
+              "expected_behavior": "Gives measured speeds and says if they are enough for video calls"
+            },
+            {
+              "description": "WiFi history of an aircraft tail number",
+              "prompt": "What WiFi is fitted to aircraft N37502?",
+              "tools_triggered": "get_tail_info",
+              "expected_behavior": "Gives the provider history of that tail number"
+            }
+          ],
+          "negative": [
+            {
+              "description": "Flight booking is out of scope. SeatWiFi cannot book flights",
+              "prompt": "Book me a flight from London to New York."
+            },
+            {
+              "description": "Hotel WiFi is out of scope. SeatWiFi covers in-flight WiFi only",
+              "prompt": "What is the WiFi password at my hotel?"
+            },
+            {
+              "description": "Unrelated request",
+              "prompt": "Give me a recipe for banana bread."
+            }
+          ]
+        }
+      }
+    }
   }
 }
