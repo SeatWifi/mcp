@@ -1,8 +1,8 @@
 # SeatWiFi plugins
 
-[SeatWiFi](https://seatwifi.com) tracks in-flight WiFi: which onboard WiFi system is fitted to which
-aircraft, whether it is free, how fast it is, and how far each airline's satellite WiFi rollout has
-progressed.
+[SeatWiFi](https://seatwifi.com) tracks in-flight WiFi: which provider (Starlink, Viasat, Gogo,
+Panasonic, Amazon Leo) is fitted to which aircraft, whether it is free, how fast it is, and how far
+each airline's Starlink rollout has progressed.
 
 This repository holds the SeatWiFi plugin for Cursor, Claude Code, Grok and OpenAI Codex. The plugin
 connects your agent to the hosted, read-only SeatWiFi MCP server (`https://mcp.seatwifi.com/mcp`,

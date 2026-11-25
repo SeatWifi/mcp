@@ -21,7 +21,7 @@ The server is read-only and needs no account. A paid SeatWiFi API key is optiona
 The marketplace files at the repository root (`.cursor-plugin/marketplace.json` and
 `.claude-plugin/marketplace.json`) point here. Keep `version` the same in all four manifests.
 
-Check it before you submit:
+Validate the plugin:
 
 ```bash
 claude plugin validate ./plugins/seatwifi --profile directory
@@ -39,53 +39,17 @@ claude plugin validate .
 | Grok | grok.com/connectors → New Connector → Custom → the URL. A paid Grok plan is necessary |
 | Codex | `codex mcp add seatwifi --url https://mcp.seatwifi.com/mcp` |
 
-## Submit to the directories
+## Test cases
 
-Each directory reviews by hand. Nothing here is submitted automatically.
-
-### Cursor Marketplace
-
-1. The marketplace reads the plugin from a public Git repository. Submit the public repository
-   [SeatWifi/mcp](https://github.com/SeatWifi/mcp), which holds this folder and the root
-   `.cursor-plugin/marketplace.json`.
-2. Sign in and submit the repository link at <https://cursor.com/marketplace/publish>.
-3. Submit one time only. A second submission makes a duplicate in the review queue.
-
-### Claude (two listings)
-
-- **Connector** (Claude.ai, desktop and mobile): <https://claude.ai/directory/manage> → Submit new →
-  MCP connector. Connection URL `https://mcp.seatwifi.com/mcp`, authentication `none`. Every tool
-  has a `title`, `readOnlyHint: true` and `destructiveHint: false`. Privacy policy:
-  `https://seatwifi.com/privacy`. Support: `https://seatwifi.com/contact`. A paid Claude plan is
-  necessary to submit.
-- **Plugin** (Claude Code): the same portal → Plugin bundle, with this folder.
-
-### ChatGPT directory (OpenAI plugin)
-
-1. In the OpenAI platform organization, complete individual or business verification. You need the
-   Apps Management Write permission.
-2. Make the ZIP from this folder:
-   `cd plugins/seatwifi && zip -r ../seatwifi-openai.zip .codex-plugin .mcp.json skills assets LICENSE`
-3. <https://platform.openai.com/plugins> → Upload new or existing plugin → upload the ZIP.
-4. MCPs → Connect. The portal gives a domain verification token, which SeatWiFi sets on the MCP
-   server before the portal checks it.
-5. Enter the test cases below, a demo video URL, and submit. Authentication: none.
-6. If the portal rejects `.mcp.json` in the ZIP, remove it and the `mcpServers` line, and connect the
-   URL in the portal only.
-
-`interface.termsOfServiceURL` points to `https://seatwifi.com/terms`.
-
-#### Test cases for the OpenAI review
-
-OpenAI asks for 5 positive and 3 negative cases.
+Five positive and three negative cases, also listed in `.codex-plugin/plugin.json`.
 
 | # | Prompt | Tools | Expected |
 |---|---|---|---|
-| P1 | Will UA1234 have WiFi on its next flight? | `get_wifi_facts` | Gives the WiFi odds, the confidence level and a link to the SeatWiFi flight page |
-| P2 | What WiFi does Qatar Airways have, and is it free? | `get_airline_wifi` | Names the WiFi systems, the free conditions and the cabins |
-| P3 | Which airlines are installing satellite WiFi right now? | `get_rollouts` | Lists airlines with an in-progress rollout and their progress |
+| P1 | Will UA1234 have Starlink WiFi on its next flight? | `get_wifi_facts` | Gives the Starlink odds, the confidence level and a link to the SeatWiFi flight page |
+| P2 | What WiFi does Qatar Airways have, and is it free? | `get_airline_wifi` | Names the providers, the free conditions and the cabins |
+| P3 | Which airlines are installing Starlink right now? | `get_rollouts` | Lists airlines with an in-progress rollout and their progress |
 | P4 | Is the WiFi on Delta fast enough for a video call? | `get_speed_stats` | Gives measured speeds and says if they are enough for video calls |
-| P5 | What WiFi is fitted to aircraft N37502? | `get_tail_info` | Gives the WiFi system history of that tail number |
+| P5 | What WiFi is fitted to aircraft N37502? | `get_tail_info` | Gives the provider history of that tail number |
 
 | # | Prompt | Expected |
 |---|---|---|
