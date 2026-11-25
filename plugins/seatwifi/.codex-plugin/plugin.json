@@ -1,7 +1,7 @@
 {
   "name": "seatwifi",
   "version": "1.2.2",
-  "description": "In-flight WiFi data: onboard WiFi system by flight, airline or tail number, measured speeds, and satellite WiFi rollout status. Read-only, no account needed.",
+  "description": "In-flight WiFi data: provider by flight, airline or tail number, measured speeds, and Starlink rollout status. Read-only, no account needed.",
   "author": {
     "name": "SeatWiFi",
     "url": "https://seatwifi.com"
@@ -12,7 +12,7 @@
   "keywords": [
     "wifi",
     "in-flight wifi",
-    "satellite wifi",
+    "starlink",
     "airline",
     "flight",
     "travel",
@@ -23,13 +23,13 @@
   "interface": {
     "displayName": "SeatWiFi",
     "shortDescription": "In-flight WiFi by flight",
-    "longDescription": "Check the WiFi on a flight before you fly. SeatWiFi tells you which onboard WiFi system is fitted to the aircraft on a flight, an airline or a tail number, whether the WiFi is free, how fast it is from measured speed tests, and how far each airline's satellite WiFi rollout has progressed. Answers are predictions from fleet and ADS-B data, and each answer gives its confidence. Read-only. No account needed.",
+    "longDescription": "Check the WiFi on a flight before you fly. SeatWiFi tells you which provider (Starlink, Viasat, Gogo, Panasonic, Amazon Leo) is fitted to the aircraft on a flight, an airline or a tail number, whether the WiFi is free, how fast it is from measured speed tests, and how far each airline's Starlink rollout has progressed. Answers are predictions from fleet and ADS-B data, and each answer gives its confidence. Read-only. No account needed.",
     "developerName": "SeatWiFi",
     "category": "Travel",
     "capabilities": [
       "Predict the WiFi provider on a flight number and date",
       "Show WiFi provider, price and speed for an airline",
-      "Show satellite WiFi rollout status by airline",
+      "Show Starlink rollout status by airline",
       "Show the WiFi history of an aircraft tail number",
       "Show measured WiFi speeds"
     ],
@@ -38,8 +38,8 @@
     "privacyPolicyURL": "https://seatwifi.com/privacy",
     "termsOfServiceURL": "https://seatwifi.com/terms",
     "defaultPrompt": [
-      "Will UA1234 have satellite WiFi tomorrow?",
-      "Which airlines have free satellite WiFi?",
+      "Will UA1234 have Starlink WiFi tomorrow?",
+      "Which airlines have free Starlink WiFi?",
       "Is the WiFi on Qatar Airways fast enough for video calls?"
     ],
     "brandColor": "#008f73",
@@ -52,20 +52,20 @@
         "test_cases": {
           "positive": [
             {
-              "description": "Satellite WiFi odds for a flight number",
-              "prompt": "Will UA1234 have WiFi on its next flight?",
+              "description": "Starlink odds for a flight number",
+              "prompt": "Will UA1234 have Starlink WiFi on its next flight?",
               "tools_triggered": "get_wifi_facts",
-              "expected_behavior": "Gives the WiFi odds, the confidence level and a link to the SeatWiFi flight page"
+              "expected_behavior": "Gives the Starlink odds, the confidence level and a link to the SeatWiFi flight page"
             },
             {
-              "description": "WiFi system and price for an airline",
+              "description": "WiFi provider and price for an airline",
               "prompt": "What WiFi does Qatar Airways have, and is it free?",
               "tools_triggered": "get_airline_wifi",
-              "expected_behavior": "Names the WiFi systems, the free conditions and the cabins"
+              "expected_behavior": "Names the providers, the free conditions and the cabins"
             },
             {
-              "description": "Satellite WiFi rollout progress",
-              "prompt": "Which airlines are installing satellite WiFi right now?",
+              "description": "Starlink rollout progress",
+              "prompt": "Which airlines are installing Starlink right now?",
               "tools_triggered": "get_rollouts",
               "expected_behavior": "Lists airlines with an in-progress rollout and their progress"
             },
@@ -79,7 +79,7 @@
               "description": "WiFi history of an aircraft tail number",
               "prompt": "What WiFi is fitted to aircraft N37502?",
               "tools_triggered": "get_tail_info",
-              "expected_behavior": "Gives the WiFi system history of that tail number"
+              "expected_behavior": "Gives the provider history of that tail number"
             }
           ],
           "negative": [

@@ -10,7 +10,7 @@
     {
       "name": "seatwifi",
       "source": "plugins/seatwifi",
-      "description": "In-flight WiFi by flight, airline or tail number, measured speeds, satellite WiFi rollout."
+      "description": "In-flight WiFi by flight, airline or tail number, measured speeds, Starlink rollout."
     }
   ]
 }
