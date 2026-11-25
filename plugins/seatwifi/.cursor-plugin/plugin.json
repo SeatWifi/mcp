@@ -2,20 +2,20 @@
   "name": "seatwifi",
   "displayName": "SeatWiFi",
   "version": "1.2.2",
-  "description": "In-flight WiFi data: provider by flight, airline or tail number, measured speeds, and Starlink rollout status. Read-only, no account needed.",
+  "description": "In-flight WiFi data: onboard WiFi system by flight, airline or tail number, measured speeds, and satellite WiFi rollout status. Read-only, no account needed.",
   "author": {
     "name": "SeatWiFi"
   },
   "publisher": "SeatWiFi",
   "homepage": "https://seatwifi.com/for-developers",
-  "repository": "https://github.com/SeatWifi/MCP",
+  "repository": "https://github.com/SeatWifi/mcp",
   "license": "MIT",
   "logo": "assets/logo.png",
   "category": "integrations",
   "keywords": [
     "wifi",
     "in-flight wifi",
-    "starlink",
+    "satellite wifi",
     "airline",
     "flight",
     "travel",
@@ -26,7 +26,7 @@
     "travel",
     "aviation",
     "wifi",
-    "starlink",
+    "satellite wifi",
     "mcp"
   ],
   "skills": "./skills/",

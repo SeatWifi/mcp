@@ -1,0 +1,14 @@
+{
+  "name": "seatwifi",
+  "version": "1.2.2",
+  "description": "SeatWiFi plugin for Grok. In-flight WiFi data: onboard WiFi system by flight, airline or tail number, measured speeds, and satellite WiFi rollout status. Read-only, no account needed.",
+  "author": {
+    "name": "SeatWiFi",
+    "url": "https://seatwifi.com"
+  },
+  "homepage": "https://seatwifi.com/for-developers",
+  "repository": "https://github.com/SeatWifi/mcp",
+  "license": "MIT",
+  "keywords": ["wifi", "in-flight wifi", "satellite wifi", "airline", "flight", "travel", "mcp"],
+  "mcpServers": "mcp.json"
+}
