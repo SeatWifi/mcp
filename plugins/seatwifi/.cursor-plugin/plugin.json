@@ -1,7 +1,7 @@
 {
   "name": "seatwifi",
   "displayName": "SeatWiFi",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "In-flight WiFi data: provider by flight, airline or tail number, measured speeds, and Starlink rollout status. Read-only, no account needed.",
   "author": {
     "name": "SeatWiFi"
