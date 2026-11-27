@@ -13,7 +13,6 @@ no account needed) and adds a `seatwifi-lookup` skill.
 - **Claude Code:** `/plugin marketplace add SeatWifi/mcp` then `/plugin install seatwifi@seatwifi`
 - **Cursor:** install SeatWiFi from the Cursor Marketplace, or use the
   [Add to Cursor](https://seatwifi.com/for-developers) button for the MCP server only.
-- **Codex:** `codex mcp add seatwifi --url https://mcp.seatwifi.com/mcp`
 - **Claude.ai, ChatGPT, Grok:** add `https://mcp.seatwifi.com/mcp` as a custom connector.
 
 ## Tools

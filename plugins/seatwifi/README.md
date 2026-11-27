@@ -16,7 +16,7 @@ The server is read-only and needs no account. A paid SeatWiFi API key is optiona
 | `.codex-plugin/plugin.json`, `.mcp.json` | OpenAI Codex and the ChatGPT plugin directory |
 | `.grok-plugin/plugin.json`, `mcp.json` | Grok |
 | `skills/seatwifi-lookup/SKILL.md` | All four |
-| `assets/logo.png` | All four (512 x 512 PNG on a solid `#0A0E14` background, fully opaque) |
+| The logo image in `assets/` | All four (512 x 512 PNG on a solid `#0A0E14` background, fully opaque) |
 
 The marketplace files at the repository root (`.cursor-plugin/marketplace.json` and
 `.claude-plugin/marketplace.json`) point here. Keep `version` the same in all four manifests.

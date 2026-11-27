@@ -1,7 +1,6 @@
 {
   "name": "seatwifi",
-  "displayName": "SeatWiFi",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "In-flight WiFi data: provider by flight, airline or tail number, measured speeds, and Starlink rollout status. Read-only, no account needed.",
   "author": {
     "name": "SeatWiFi",
@@ -20,10 +19,7 @@
     "mcp"
   ],
   "icon": "./assets/logo.png",
-  "documentationUrl": "https://seatwifi.com/for-developers",
-  "supportUrl": "https://seatwifi.com/contact",
   "privacyPolicyUrl": "https://seatwifi.com/privacy",
-  "termsOfServiceUrl": "https://seatwifi.com/terms",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }
